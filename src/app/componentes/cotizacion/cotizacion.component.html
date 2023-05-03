@@ -1,0 +1,49 @@
+<!--En este archivo se realiza el formulario para que el usuario mande sus datos para su cotizacion y posteriormente sea calculada y enviada a traves de correo en un pdf, tambien dispondra de la opcion para descargarlo, sin embargo, estas funciones se integraran en el backend-->
+<!--Este archivo tambien dispone de su diseño propio hecho manualmente en css siguiendo el mismo diseño del resto de la pagina.-->
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<div *ngIf="!mostrandoElementos">
+    <head>
+        <title>Formulario de Cotizacion</title>
+        <script>
+            function clearInput(input) {
+                input.value = "";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Cotización de Vehículo</h1>
+        <form>
+            <label for="Vehiculo">Selecciona el nombre de tu vehiculo:</label>
+            <input type="text" id="Vehiculo" name="Vehiculo" required style="width: 300px; height: 30px">
+    
+            <label for="Modelo">Modelo:</label>
+            <input type="number" id="Modelo" name="Modelo" min="1990" max="2023" placeholder="Ej: 2023" required style="width: 200px; height: 30px">
+    
+            <br>
+            <label for="codigoPostal">Introduce tu código postal con números:</label>
+            <input type="text" id="codigoPostal" name="codigoPostal" onclick="clearInput(this)" pattern="[0-9]+" title="Solo se permiten números">
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="text" id="email" name="email" onclick="clearInput(this)">
+            <br>
+            <input type="submit" value="Cotiza con nosotros" (click)="alternarMostrar()">
+            <label> Tu información está segura  | Compra 100% digital  | Hasta 12 MSI</label>
+            <br>
+        </form>
+    </body>
+</div>
+
+<div *ngIf="mostrandoElementos">
+        <form>
+            <br>
+            <h2>Hemos enviado a tu correo electronico la cotizacion</h2>
+            <label> O bien descarga en PDF</label>
+            <input type="submit" value="Descargar">
+        </form>
+
+
+</div>
+
+</html>

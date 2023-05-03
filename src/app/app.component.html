@@ -1,0 +1,37 @@
+<!--En este documento se crean los botones de inicio de sesion
+e inicio con sus respectivas rutas.-->
+<!--Hay unos botones comentados que se usaron para verificar su
+funcionamiento y acceso a sus rutas, sin embargo, se pueden descomentar para
+accerder al contenido de manera directa. Cabe recalcar que se eliminaran para 
+el backend ya que no son necesarios.-->
+<!-- Parte de la navecacion se hizo con bootstrap para posteriormente
+cambiar la fuente de letra por una de google y personalizarla con el color rojo.
+Existen estilos de css para los botones que no fueron hechos en bootstrap, se les dieron estilos
+de forma manual.-->
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <!--<a class="nav-link" routerLink="/cotizacion" routerLinkActive="active">Cotizacion</a>-->
+        </li>
+        <li class="nav-item">
+          <!--<a class="nav-link" routerLink="/capturista" routerLinkActive="active">Capturista</a>-->
+        </li>
+        <li class="nav-item">
+          <!--<a class="nav-link" routerLink="/cotizacion_2" routerLinkActive="active">Administrador</a>-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  

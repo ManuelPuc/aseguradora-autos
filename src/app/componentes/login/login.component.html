@@ -1,0 +1,21 @@
+<!--Aqui se crea un pequeño formulario para introducir un usuario y contraseña.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+
+  </head>
+  <body>
+    <form>
+      <h2>Iniciar sesión</h2>
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+<!--Aqui en el boton se recibiran los datos a validar y se enviaran a la seccion correspondiente, sea administrador o capturista.-->
+      <input type="submit" value="Iniciar sesión" (click) = "Capturista()">
+    </form>
+  </body>
+</html>

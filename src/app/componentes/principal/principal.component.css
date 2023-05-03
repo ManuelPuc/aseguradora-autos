@@ -1,0 +1,94 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    max-width: 65%;
+    height: auto;
+  }
+ 
+.catalogo{
+  width: 1000px;
+}
+input[type="submit"] {
+  
+  display: block;
+  width: 50%;
+  background-color: #f44336;
+  color: #fff;
+  padding: 0.9rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #d32f2f;
+}
+
+label:last-of-type {
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.table-bordered {
+  transform: scale(0.9);
+}
+.colorido{
+  background-color: #f44336;
+  color: #fff;
+}
+
+/*mis cambios*/
+
+/* Footer */
+footer {
+  background-color: #f44336;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  }
+  
+  footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  }
+  
+  footer a:hover {
+  border-bottom: none;
+  }

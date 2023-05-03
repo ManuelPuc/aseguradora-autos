@@ -1,0 +1,39 @@
+<!--Aqui se crea un formulario para ingresar los datos a calcular
+para la cotizacion del seguro, sin embargo, solo el adiministrador sera capaz de realizar esta acción.Para los estilos de este formulario fueron hechos a mano y se encuentran en el archivo css correspondiente.-->
+<form>
+    <h1>Asignar conceptos del seguro</h1>
+    <label for="prima_neta">Prima neta:</label>
+    <input type="number" id="prima_neta" name="prima_neta">
+  
+    <label for="descuento">Descuento:</label>
+    <input type="number" id="descuento" name="descuento">
+  
+    <label for="prima_modulos">Prima de módulos:</label>
+    <input type="number" id="prima_modulos" name="prima_modulos">
+  
+    <label for="recargo_fraccionamiento">Recargo por fraccionamiento:</label>
+    <input type="number" id="recargo_fraccionamiento" name="recargo_fraccionamiento">
+  
+    <label for="reduccion_autorizada">Reducción autorizada:</label>
+    <input type="number" id="reduccion_autorizada" name="reduccion_autorizada">
+  
+    <label for="derechos_poliza">Derechos de póliza:</label>
+    <input type="number" id="derechos_poliza" name="derechos_poliza">
+  
+    <label for="iva">IVA:</label>
+    <input type="number" id="iva" name="iva">
+  
+    <label for="total_pagar">Total a pagar:</label>
+    <input type="number" id="total_pagar" name="total_pagar">
+  
+    <label for="compania_seguros">Compañía de seguros:</label>
+    <select id="compania_seguros" name="compania_seguros">
+      <option value="seguros_mexico">Seguros México</option>
+      <option value="seguros_america">Seguros América</option>
+      <option value="seguros_unidos">Seguros Unidos</option>
+    </select>
+  
+    <button type="submit">Guardar</button>
+    <button type="reset">Cancelar</button>
+  </form>
+  
